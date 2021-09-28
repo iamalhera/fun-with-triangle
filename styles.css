@@ -1,3 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root{
+    font-family: 'Poppins', sans-serif;
+    --primary-color: #c9184a ;
+}
 body{
-    color:red ;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* navigation  */
+nav{
+    background-color: var(--primary-color) ;
+    padding: 1rem;
+    color:white;
+    margin: auto;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding-left: 2rem;
+}
+
+nav a strong{
+    color: #fdfcdc;
+}
+
+/* main  */
+
+.description{
+    font-size: 25px ;
+    padding: 1rem;
+}
+.angle-input{
+    margin: 0.5rem;
+    font-size: 15px;
+}
+
+#check-button{
+    margin: 2rem;
+    padding: 0.5rem ;
+    border-radius: 0.4rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none ;
+    font-size: 19px;
+}
+
+/* hypotenuse  */
+#first-side{
+    margin: 0.5rem;
+    font-size: 15px;
+}
+#second-side{
+    margin: 0.5rem;
+    font-size: 15px;
+}
+
+#calculate-hypotenuse-button{
+    margin: 2rem;
+    padding: 0.5rem ;
+    border-radius: 0.4rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none ;
+    font-size: 19px;
+}
+/* area  */
+
+#side-one{
+    margin: 0.5rem;
+    font-size: 15px;
+}
+#side-two{
+    margin: 0.5rem;
+    font-size: 15px;
+}
+#calculate-area-button{
+    margin: 2rem;
+    padding: 0.5rem ;
+    border-radius: 0.4rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none ;
+    font-size: 19px;
+}
+
+/* area page  */
+.question-container{
+    border: 3px solid black;
+    margin: 1rem 20rem ;
+    border-radius: 0.4rem;
+}
+
+form p{
+    font-size: large;
+}
+
+.footer{
+    padding-top :2rem;
 }

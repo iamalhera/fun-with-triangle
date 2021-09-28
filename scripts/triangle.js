@@ -1,19 +1,17 @@
-const angleOne = document.querySelector("#angle-one");
-const angleTwo = document.querySelector("#angle-two");
-const angleThree = document.querySelector("#angle-three");
+const angleInputs = document.querySelectorAll(".angle-input")
 const checkButton = document.querySelector("#check-button");
 const output = document.querySelector("#output");
 
 function checkTriangle(){
-    const angleOneNum = Number(angleOne.value);
-    const angleTwoNum = Number(angleTwo.value);
-    const angleThreeNum = Number(angleThree.value);
+    const angleOneNum = Number(angleInputs[0].value);
+    const angleTwoNum = Number(angleInputs[1].value);
+    const angleThreeNum = Number(angleInputs[2].value);
     const sumOfAngles = angleOneNum + angleTwoNum + angleThreeNum ;
     if(sumOfAngles === 180 ){
-        output.innerText = "This is a triangle! ";
+        output.innerText = "This is a Triangle! ";
     }
     else{
-        output.innerText = "This is not a triangle! ";
+        output.innerText = "This is NOT a Triangle! ";
     }
 }
 
